@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teşekkürler | Bundle</title>
+    <link rel="shortcut icon"
+        href="https://bundlenews.atlassian.net/s/-x8fh9u/b/3/eabf86b90ad406fb21c6aafc356eaa14/_/jira-favicon-scaled.png"
+        type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 70px 0;
+            padding: 0;
+            font-family: 'Archivo', sans-serif;
+            background-color: #1E1E1E;
+            color: #FFF;
+            position: relative;
+        }
+
+        body::before,
+        body::after {
+            content: '';
+            background-color: #d2000000;
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            z-index: 1;
+            border-radius: 100%;
+            box-shadow: 0 0 900px 65px #ff0000;
+        }
+
+        body::before {
+            top: 40%;
+            left: 20%;
+        }
+
+        body::after {
+            top: 90%;
+            right: 20%;
+        }
+
+        header,
+        main,
+        footer {
+            max-width: 575px;
+            margin: auto;
+        }
+
+        header {
+            margin-bottom: 40px;
+        }
+
+        header .logo {
+            margin: 0 30px;
+        }
+
+        header img {
+            width: 100px;
+        }
+
+        main,
+        footer {
+            position: relative;
+            z-index: 9;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        main .highlight {
+            margin: 0 30px;
+            font-weight: 100;
+        }
+
+        main .highlight .highlight-title {
+            font-size: 48px;
+            margin-top: 20px;
+        }
+
+        main .highlight .highlight-content {
+            font-size: 15px;
+            margin: 24px 0;
+            line-height: 1.4;
+        }
+
+        main .highlight .highlight-text {
+            color: #E62C33;
+            font-size: 26px;
+            font-weight: normal;
+            margin-top: 20px;
+            display: flex;
+        }
+
+        main .review-list {
+            width: 100%;
+            margin: 20px auto;
+            padding: 50px 10px 10px;
+            list-style: none;
+        }
+
+        .review-list .review-item {
+            background: linear-gradient(320deg, #ff5f5f00, #FF5F5F);
+            margin-bottom: 10px;
+            border-radius: 30px;
+            padding: 2px;
+            text-align: left;
+            position: relative;
+
+        }
+
+        .review-list .review-item:nth-child(1) {
+            width: 80%;
+            transform: translateY(-40px);
+            opacity: .1;
+            position: absolute;
+            left: 10%;
+        }
+
+        .review-list .review-item:nth-child(2) {
+            width: 90%;
+            transform: translateY(-20px);
+            opacity: .4;
+            position: absolute;
+            left: 5%;
+        }
+
+        .review-list .review-item:nth-child(n+3) {
+            width: 100%;
+        }
+
+        .review-list .review-item-content {
+            background-color: #000;
+            border-radius: 28px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .review-list .review-item-content .rating-stars {
+            color: #FEDC5A;
+            margin-left: 10px;
+        }
+
+        .review-list .review-item .author {
+            margin: 0;
+            color: #82929A;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+
+        .review-list .review-item h6 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .review-list .review-item .comment-content {
+            font-size: 20px;
+            font-weight: 200;
+            line-height: 1.2;
+        }
+
+        .review-list .platform {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: #9C9C9C;
+        }
+
+        .review-list .platform .platform-logo {
+            width: 18px;
+            margin-right: 10px;
+        }
+
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer .cta-button {
+            padding: 20px 40px;
+            background-color: #E62C33;
+            color: #FDF5D4;
+            border: none;
+            border-radius: 120px;
+            font-size: 20px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        footer .cta-button:hover {
+            background-color: #d1252b;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <svg width="79" height="20" viewBox="0 0 79 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0 2.78133C0 1.83761 0.765036 1.07257 1.70876 1.07257H11.1186V13.6425H1.70876C0.765036 13.6425 0 12.8774 0 11.9337V2.78133Z"
+                    fill="#FF5F5F" fill-opacity="0.5" />
+                <path
+                    d="M11.1071 1.07257H20.5169C21.4606 1.07257 22.2257 1.83761 22.2257 2.78133V18.2187C22.2257 19.1624 21.4606 19.9274 20.5169 19.9274H12.8158C11.8721 19.9274 11.1071 19.1624 11.1071 18.2187V1.07257Z"
+                    fill="#E62C33" />
+                <path
+                    d="M35.7689 14.3482C35.7689 15.9845 35.3014 17.2523 34.3663 18.1514C33.4492 19.0505 32.2354 19.5 30.725 19.5H26.2205C26.0407 19.5 25.9508 19.4101 25.9508 19.2303V0.888697C25.9508 0.708878 26.0407 0.618968 26.2205 0.618968H30.3473C31.9837 0.618968 33.2604 1.05054 34.1775 1.91367C35.1126 2.75882 35.5801 3.99957 35.5801 5.63593C35.5801 7.57798 34.8878 8.91763 33.5032 9.65489C33.4133 9.70884 33.4043 9.75379 33.4762 9.78976C34.1955 10.2213 34.7529 10.8237 35.1485 11.5969C35.5621 12.3702 35.7689 13.2872 35.7689 14.3482ZM28.6481 2.85772C28.5761 2.85772 28.5402 2.89368 28.5402 2.96561V8.68387C28.5402 8.75579 28.5761 8.79176 28.6481 8.79176H30.3743C31.2195 8.79176 31.8758 8.54001 32.3433 8.03652C32.8109 7.51504 33.0446 6.79576 33.0446 5.87869C33.0446 4.92564 32.8109 4.18838 32.3433 3.66691C31.8758 3.12745 31.2195 2.85772 30.3743 2.85772H28.6481ZM30.5092 17.2343C31.3364 17.2343 31.9837 16.9556 32.4512 16.3981C32.9367 15.8407 33.1795 15.0495 33.1795 14.0245C33.1795 12.9815 32.9457 12.1724 32.4782 11.5969C32.0107 11.0035 31.3633 10.7068 30.5362 10.7068H28.6481C28.5761 10.7068 28.5402 10.7428 28.5402 10.8147V17.1264C28.5402 17.1983 28.5761 17.2343 28.6481 17.2343H30.5092ZM42.5945 6.04052C42.5945 5.8607 42.6844 5.77079 42.8642 5.77079H44.9142C45.094 5.77079 45.1839 5.8607 45.1839 6.04052V19.2303C45.1839 19.4101 45.094 19.5 44.9142 19.5H42.8642C42.6844 19.5 42.5945 19.4101 42.5945 19.2303V18.4481C42.5945 18.3941 42.5765 18.3671 42.5406 18.3671C42.5226 18.3671 42.4956 18.3851 42.4597 18.4211C41.9202 19.2662 41.0571 19.6888 39.8703 19.6888C38.7913 19.6888 37.9192 19.3651 37.2539 18.7178C36.5886 18.0525 36.2559 17.0455 36.2559 15.6968V6.04052C36.2559 5.8607 36.3458 5.77079 36.5256 5.77079H38.5756C38.7554 5.77079 38.8453 5.8607 38.8453 6.04052V15.1304C38.8453 16.6768 39.4567 17.4501 40.6794 17.4501C41.2908 17.4501 41.7584 17.2343 42.082 16.8027C42.4237 16.3532 42.5945 15.7418 42.5945 14.9686V6.04052ZM51.324 5.58198C52.4569 5.58198 53.32 5.96859 53.9134 6.74182C54.5248 7.49706 54.8305 8.57597 54.8305 9.97857V19.2303C54.8305 19.4101 54.7406 19.5 54.5608 19.5H52.5109C52.331 19.5 52.2411 19.4101 52.2411 19.2303V10.1943C52.2411 9.43911 52.0793 8.85469 51.7556 8.44111C51.4319 8.02753 50.9824 7.82073 50.407 7.82073C49.8136 7.82073 49.346 8.02753 49.0044 8.44111C48.6807 8.83671 48.5009 9.40314 48.4649 10.1404C48.4649 10.2483 48.4559 10.3022 48.4379 10.3022V19.2303C48.4379 19.4101 48.348 19.5 48.1682 19.5H46.1183C45.9385 19.5 45.8485 19.4101 45.8485 19.2303V6.04052C45.8485 5.8607 45.9385 5.77079 46.1183 5.77079H48.1682C48.348 5.77079 48.4379 5.8607 48.4379 6.04052V6.76879C48.4379 6.80475 48.4559 6.83173 48.4919 6.84971C48.5279 6.84971 48.5638 6.82274 48.5998 6.76879C49.2471 5.97759 50.1552 5.58198 51.324 5.58198ZM62.0765 0.888697C62.0765 0.708878 62.1664 0.618968 62.3463 0.618968H64.3962C64.576 0.618968 64.6659 0.708878 64.6659 0.888697V19.2303C64.6659 19.4101 64.576 19.5 64.3962 19.5H62.3463C62.1664 19.5 62.0765 19.4101 62.0765 19.2303V18.7987C62.0765 18.7627 62.0586 18.7358 62.0226 18.7178C62.0046 18.6998 61.9776 18.7088 61.9417 18.7448C61.6 19.0684 61.2134 19.3112 60.7818 19.473C60.3503 19.6349 59.9187 19.7158 59.4871 19.7158C58.3003 19.7158 57.3563 19.3292 56.655 18.5559C55.9717 17.7647 55.63 16.7308 55.63 15.4541V9.8437C55.63 8.51304 55.9717 7.47009 56.655 6.71484C57.3563 5.94162 58.3003 5.55501 59.4871 5.55501C59.9187 5.55501 60.3503 5.63593 60.7818 5.79777C61.2134 5.9596 61.6 6.20236 61.9417 6.52603C61.9776 6.562 62.0046 6.57099 62.0226 6.55301C62.0586 6.53503 62.0765 6.50805 62.0765 6.47209V0.888697ZM60.1615 17.477C60.665 17.477 61.0875 17.3152 61.4292 16.9915C61.7888 16.6499 62.0046 16.2093 62.0765 15.6698V9.60095C62.0046 9.06149 61.7888 8.62992 61.4292 8.30625C61.0875 7.96459 60.665 7.79376 60.1615 7.79376C59.586 7.79376 59.1095 8.00055 58.7319 8.41414C58.3723 8.82772 58.1924 9.35819 58.1924 10.0055V15.2653C58.1924 15.9126 58.3723 16.4431 58.7319 16.8567C59.1095 17.2702 59.586 17.477 60.1615 17.477ZM65.7628 19.5C65.5829 19.5 65.493 19.4101 65.493 19.2303V0.888697C65.493 0.708878 65.5829 0.618968 65.7628 0.618968H67.8127C67.9925 0.618968 68.0824 0.708878 68.0824 0.888697V19.2303C68.0824 19.4101 67.9925 19.5 67.8127 19.5H65.7628ZM77.9655 13.4311C77.9655 13.6109 77.8756 13.7008 77.6957 13.7008H71.5999C71.5279 13.7008 71.492 13.7368 71.492 13.8087V15.2653C71.492 15.9126 71.6718 16.4431 72.0314 16.8567C72.3911 17.2702 72.8586 17.477 73.434 17.477C73.9375 17.477 74.3601 17.3242 74.7017 17.0185C75.0434 16.7128 75.2592 16.3172 75.3491 15.8317C75.403 15.6878 75.5019 15.6159 75.6458 15.6159L77.6418 15.7238C77.7317 15.7238 77.7946 15.7508 77.8306 15.8047C77.8846 15.8587 77.9025 15.9216 77.8846 15.9935C77.7587 17.1623 77.3091 18.0794 76.5359 18.7448C75.7807 19.3921 74.7467 19.7158 73.434 19.7158C72.0494 19.7158 70.9435 19.3292 70.1164 18.5559C69.3072 17.7827 68.9026 16.7488 68.9026 15.4541V9.8437C68.9026 8.56698 69.3072 7.53302 70.1164 6.74182C70.9435 5.95061 72.0494 5.55501 73.434 5.55501C74.8366 5.55501 75.9425 5.95061 76.7517 6.74182C77.5609 7.53302 77.9655 8.56698 77.9655 9.8437V13.4311ZM73.434 7.79376C72.8586 7.79376 72.3911 8.00055 72.0314 8.41414C71.6718 8.82772 71.492 9.35819 71.492 10.0055V11.4351C71.492 11.507 71.5279 11.543 71.5999 11.543H75.2952C75.3671 11.543 75.403 11.507 75.403 11.4351V10.0055C75.403 9.35819 75.2232 8.82772 74.8636 8.41414C74.5039 8.00055 74.0274 7.79376 73.434 7.79376Z"
+                    fill="white" />
+            </svg>
+        </div>
+    </header>
+    <main>
+        <div class="highlight">
+            <h1 class="highlight-title">Teşekkürler</h1>
+
+            <p class="highlight-content">Bundle tam <strong>10 yıldır sizlerle var</strong>. Son günlerde de sizlerden
+                aldığımız güzel yorumlarda
+                da ortak bir
+                kelime
+                var:
+                <strong>Teşekkürler!</strong>
+            </p>
+
+            <p class="highlight-content">İlk günden beri aldığımız yüzümüzü güldüren yorumlar, tutkuyla sizleri dünyaya
+                bağlamaya çalışan bizlere
+                güç
+                veriyor.<br>Asıl biz teşekkür ederiz.</p>
+
+            <div class="highlight-text">
+                Asıl biz teşekkür ederiz ❤️
+            </div>
+        </div>
+        <ul class="review-list">
+            <li class="review-item">
+                <div class="review-item-content">
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </li>
+            <li class="review-item">
+                <div class="review-item-content">
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </li>
+            <li class="review-item">
+                <div class="review-item-content">
+                    <div class="author">İbrahİm ersöz <span class="rating-stars">★★★★★</span></div>
+                    <p class="comment-content">Bu zamana kadar kullandığım en iyi haber uygulaması. Doğruluğunu hiç bir
+                        zaman sorgulamadım,
+                        Teşekkürler Bundle ailesi.</p>
+                    <div class="platform">
+                        <img src="./icons/mail.svg" class="platform-logo" /> Mail üzerinde ulaşan kullanıcı yorumu
+                    </div>
+                </div>
+            </li>
+            <li class="review-item">
+                <div class="review-item-content">
+                    <div class="author">Umut Kaşan <span class="rating-stars">★★★★★</span></div>
+                    <p class="comment-content">yıllardır keyifle kullanıyorum. teşekkürler</p>
+                    <div class="platform">
+                        <img src="./icons/google-play.svg" class="platform-logo" /> Play Store kullanıcı yorumu
+                    </div>
+                </div>
+            </li>
+            <li class="review-item">
+                <div class="review-item-content">
+                    <div class="author">Gİzem Bİçİcİ <span class="rating-stars">★★★★★</span></div>
+                    <h6>En Hızlı Haber Uygulaması</h6>
+                    <p class="comment-content">5 yılı aşkın kullanıyorum çok güzel haberler anında ve hızlı doğrucu
+                        objektif haber kaynağı çok
+                        teşekkür ediyorum uygulama için ☺️</p>
+                    <div class="platform">
+                        <img src="./icons/app-store.svg" class="platform-logo" /> App Store kullanıcı yorumu
+                    </div>
+                </div>
+            </li>
+            <li class="review-item">
+                <div class="review-item-content">
+                    <div class="author">menteşe evlerİ <span class="rating-stars">★★★★★</span></div>
+                    <h6>En Hızlı Haber Uygulaması</h6>
+                    <p class="comment-content">Anında haberlerden bilgi alabiliyoruz emeğinize sağlık</p>
+                    <div class="platform">
+                        <img src="./icons/google-play.svg" class="platform-logo" /> Play Store kullanıcı yorumu
+                    </div>
+                </div>
+            </li>
+            <li class="review-item">
+                <div class="review-item-content">
+                    <div class="author">menteşe evlerİ <span class="rating-stars">★★★★★</span></div>
+                    <p class="comment-content">En yeni haberlerden anında haberdar oluyorum. Teşekkürler Bundle!</p>
+                    <div class="platform">
+                        <img src="./icons/app-store.svg" class="platform-logo" /> App Store kullanıcı yorumu
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <a class="cta-button" href="http://www.bndl.tw/app">Sen ne düşünüyorsun?</a>
+    </footer>
+</body>
+
+</html>
