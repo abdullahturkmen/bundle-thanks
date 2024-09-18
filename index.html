@@ -10,7 +10,27 @@
         type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./fonts/stylesheet.css" />
     <style>
+        .font-archivo {
+            font-family: 'Archivo', sans-serif;
+        }
+
+        .font-barlow {
+            font-family: "Barlow", sans-serif;
+        }
+
+        .font-gilroy {
+            font-family: "Gilroy", sans-serif;
+        }
+
+        .font-sf-pro {
+            font-family: "SFProText", sans-serif;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -18,45 +38,47 @@
         }
 
         body {
-            margin: 70px 0;
+            margin: 64px 0;
             padding: 0;
-            font-family: 'Archivo', sans-serif;
-            background-color: #1E1E1E;
+            background-color: #0b0f12;
             color: #FFF;
             position: relative;
+            --before-top: 20%;
+            --after-top: 70%;
         }
 
         body::before,
         body::after {
             content: '';
-            background-color: #d2000000;
+            background-color: #ff00004d;
             position: absolute;
-            width: 0px;
-            height: 0px;
+            width: 100px;
+            height: 100px;
             z-index: 1;
             border-radius: 100%;
             box-shadow: 0 0 900px 65px #ff0000;
+            transition: top 10s ease;
         }
 
         body::before {
-            top: 40%;
+            top: var(--before-top);
             left: 20%;
         }
 
         body::after {
-            top: 90%;
+            top: var(--after-top);
             right: 20%;
         }
 
         header,
         main,
         footer {
-            max-width: 575px;
+            max-width: 625px;
             margin: auto;
         }
 
         header {
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
         header .logo {
@@ -105,7 +127,7 @@
 
         main .review-list {
             width: 100%;
-            margin: 20px auto;
+            margin: 20px auto 4px;
             padding: 50px 10px 10px;
             list-style: none;
         }
@@ -114,7 +136,7 @@
             background: linear-gradient(320deg, #ff5f5f00, #FF5F5F);
             margin-bottom: 10px;
             border-radius: 30px;
-            padding: 2px;
+            padding: 1.5px;
             text-align: left;
             position: relative;
 
@@ -142,11 +164,11 @@
 
         .review-list .review-item-content {
             background-color: #000;
-            border-radius: 28px;
+            border-radius: 28.5px;
             padding: 30px;
             display: flex;
             flex-direction: column;
-            gap: 16px;
+            gap: 10px;
         }
 
         .review-list .review-item-content .rating-stars {
@@ -159,7 +181,7 @@
             color: #82929A;
             display: flex;
             justify-content: flex-start;
-            align-items: flex-end;
+            align-items: center;
             font-weight: 400;
             text-transform: uppercase;
             font-size: 12px;
@@ -177,6 +199,7 @@
         }
 
         .review-list .platform {
+            margin-top: 20px;
             display: flex;
             align-items: center;
             font-size: 14px;
@@ -195,7 +218,7 @@
         }
 
         footer .cta-button {
-            padding: 20px 40px;
+            padding: 18px 48px;
             background-color: #E62C33;
             color: #FDF5D4;
             border: none;
@@ -228,7 +251,7 @@
         </div>
     </header>
     <main>
-        <div class="highlight">
+        <div class="highlight font-archivo">
             <h1 class="highlight-title">Teşekkürler</h1>
 
             <p class="highlight-content">Bundle tam <strong>10 yıldır sizlerle var</strong>. Son günlerde de sizlerden
@@ -267,51 +290,54 @@
             </li>
             <li class="review-item">
                 <div class="review-item-content">
-                    <div class="author">İbrahİm ersöz <span class="rating-stars">★★★★★</span></div>
-                    <p class="comment-content">Bu zamana kadar kullandığım en iyi haber uygulaması. Doğruluğunu hiç bir
+                    <div class="author font-barlow">İbrahİm ersöz <span class="rating-stars">★★★★★</span></div>
+                    <p class="comment-content font-sf-pro">Bu zamana kadar kullandığım en iyi haber uygulaması.
+                        Doğruluğunu hiç bir
                         zaman sorgulamadım,
                         Teşekkürler Bundle ailesi.</p>
-                    <div class="platform">
+                    <div class="platform font-gilroy">
                         <img src="./icons/mail.svg" class="platform-logo" /> Mail üzerinde ulaşan kullanıcı yorumu
                     </div>
                 </div>
             </li>
             <li class="review-item">
                 <div class="review-item-content">
-                    <div class="author">Umut Kaşan <span class="rating-stars">★★★★★</span></div>
-                    <p class="comment-content">yıllardır keyifle kullanıyorum. teşekkürler</p>
-                    <div class="platform">
+                    <div class="author font-barlow">Umut Kaşan <span class="rating-stars">★★★★★</span></div>
+                    <p class="comment-content font-sf-pro">yıllardır keyifle kullanıyorum. teşekkürler</p>
+                    <div class="platform font-gilroy">
                         <img src="./icons/google-play.svg" class="platform-logo" /> Play Store kullanıcı yorumu
                     </div>
                 </div>
             </li>
             <li class="review-item">
                 <div class="review-item-content">
-                    <div class="author">Gİzem Bİçİcİ <span class="rating-stars">★★★★★</span></div>
-                    <h6>En Hızlı Haber Uygulaması</h6>
-                    <p class="comment-content">5 yılı aşkın kullanıyorum çok güzel haberler anında ve hızlı doğrucu
+                    <div class="author font-barlow">Gİzem Bİçİcİ <span class="rating-stars">★★★★★</span></div>
+                    <h6 class="font-sf-pro">En Hızlı Haber Uygulaması</h6>
+                    <p class="comment-content font-sf-pro">5 yılı aşkın kullanıyorum çok güzel haberler anında ve hızlı
+                        doğrucu
                         objektif haber kaynağı çok
                         teşekkür ediyorum uygulama için ☺️</p>
-                    <div class="platform">
+                    <div class="platform font-gilroy">
                         <img src="./icons/app-store.svg" class="platform-logo" /> App Store kullanıcı yorumu
                     </div>
                 </div>
             </li>
             <li class="review-item">
                 <div class="review-item-content">
-                    <div class="author">menteşe evlerİ <span class="rating-stars">★★★★★</span></div>
-                    <h6>En Hızlı Haber Uygulaması</h6>
-                    <p class="comment-content">Anında haberlerden bilgi alabiliyoruz emeğinize sağlık</p>
-                    <div class="platform">
+                    <div class="author font-barlow">menteşe evlerİ <span class="rating-stars">★★★★★</span></div>
+                    <h6 class="font-sf-pro">En Hızlı Haber Uygulaması</h6>
+                    <p class="comment-content font-sf-pro">Anında haberlerden bilgi alabiliyoruz emeğinize sağlık</p>
+                    <div class="platform font-gilroy">
                         <img src="./icons/google-play.svg" class="platform-logo" /> Play Store kullanıcı yorumu
                     </div>
                 </div>
             </li>
             <li class="review-item">
                 <div class="review-item-content">
-                    <div class="author">menteşe evlerİ <span class="rating-stars">★★★★★</span></div>
-                    <p class="comment-content">En yeni haberlerden anında haberdar oluyorum. Teşekkürler Bundle!</p>
-                    <div class="platform">
+                    <div class="author font-barlow">menteşe evlerİ <span class="rating-stars">★★★★★</span></div>
+                    <p class="comment-content font-sf-pro">En yeni haberlerden anında haberdar oluyorum. Teşekkürler
+                        Bundle!</p>
+                    <div class="platform font-gilroy">
                         <img src="./icons/app-store.svg" class="platform-logo" /> App Store kullanıcı yorumu
                     </div>
                 </div>
@@ -319,8 +345,24 @@
         </ul>
     </main>
     <footer>
-        <a class="cta-button" href="http://www.bndl.tw/app">Sen ne düşünüyorsun?</a>
+        <a class="cta-button font-archivo" href="http://www.bndl.tw/app">Sen ne düşünüyorsun?</a>
     </footer>
+
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+
+            // Pseudo-elementlerin top değerlerini kaydırma ile orantılı olarak güncelle
+            const beforeTop = 20 + scrollY * 0.05;  // 0.05 katsayısı ile yavaş hareket
+            const afterTop = 70 + scrollY * 0.05;
+
+            // CSS değişkenlerini güncelle
+            document.body.style.setProperty('--before-top', `${beforeTop}%`);
+            document.body.style.setProperty('--after-top', `${afterTop}%`);
+        });
+    </script>
+
 </body>
 
 </html>
