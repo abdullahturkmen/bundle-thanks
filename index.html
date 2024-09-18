@@ -43,8 +43,6 @@
             background-color: #0b0f12;
             color: #FFF;
             position: relative;
-            --before-top: 20%;
-            --after-top: 70%;
         }
 
         body::before,
@@ -57,16 +55,15 @@
             z-index: 1;
             border-radius: 100%;
             box-shadow: 0 0 900px 65px #ff0000;
-            transition: top 10s ease;
         }
 
         body::before {
-            top: var(--before-top);
+            top: 30%;
             left: 20%;
         }
 
         body::after {
-            top: var(--after-top);
+            top: 70%;
             right: 20%;
         }
 
@@ -347,22 +344,6 @@
     <footer>
         <a class="cta-button font-archivo" href="http://www.bndl.tw/app">Sen ne düşünüyorsun?</a>
     </footer>
-
-
-    <script>
-        window.addEventListener('scroll', () => {
-            const scrollY = window.scrollY;
-
-            // Pseudo-elementlerin top değerlerini kaydırma ile orantılı olarak güncelle
-            const beforeTop = 20 + scrollY * 0.05;  // 0.05 katsayısı ile yavaş hareket
-            const afterTop = 70 + scrollY * 0.05;
-
-            // CSS değişkenlerini güncelle
-            document.body.style.setProperty('--before-top', `${beforeTop}%`);
-            document.body.style.setProperty('--after-top', `${afterTop}%`);
-        });
-    </script>
-
 </body>
 
 </html>
